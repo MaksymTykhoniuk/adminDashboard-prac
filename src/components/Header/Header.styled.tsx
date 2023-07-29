@@ -1,13 +1,15 @@
 import styled from '@emotion/styled';
+import { Link } from 'react-router-dom';
 
 export const HeaderWrapper = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 5px 20px;
+  margin-bottom: 20px;
 `;
 
-export const LogoWrapper = styled.div`
+export const LogoWrapper = styled(Link)`
   display: flex;
   align-items: center;
 `;
@@ -34,7 +36,17 @@ export const ControlsList = styled.ul`
 
 export const ControlItem = styled.li``;
 
-export const ControlIcon = styled.a``;
+export const ControlIcon = styled.button`
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+  transition: all 250ms linear;
+
+  &:hover {
+    scale: 1.2;
+  }
+`;
 
 export const UserWrapper = styled.div`
   display: flex;
@@ -52,6 +64,16 @@ export const UserAvatar = styled.img`
 
 export const UserName = styled.p``;
 
-export const SettingIcon = styled.a`
+export const SettingIcon = styled.button`
   margin-left: 36px;
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+  transition: all 250ms linear;
+
+  &:hover {
+    scale: 1.2;
+    rotate: 40deg;
+  }
 `;
