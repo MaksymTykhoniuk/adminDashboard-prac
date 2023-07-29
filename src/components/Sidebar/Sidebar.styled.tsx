@@ -7,9 +7,50 @@ export const SidebarWrapper = styled.div`
   border-right: 2px solid #384256;
 `;
 
-export const Link = styled(NavLink)`
+export const SidebarList = styled.ul`
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+
+  &:last-of-type {
+    margin-bottom: 18px;
+  }
+`;
+
+export const SidebarListItem = styled.li`
+  display: flex;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 30px;
+
+  &:hover {
+    background-color: #384256;
+  }
+`;
+
+export const SidebarListTitle = styled.p`
   display: block;
-  gap: 4px;
+  margin-bottom: 16px;
+
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #ddd;
+  opacity: 0.7;
+`;
+
+export const SidebarItemIcon = styled.img`
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+`;
+
+export const Link = styled(NavLink)`
+  display: flex;
+  align-items: center;
+
   color: white;
   font-weight: 500;
 

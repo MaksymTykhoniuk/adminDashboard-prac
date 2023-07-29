@@ -1,7 +1,12 @@
-import { FooterWrapper } from './Footer.styled';
+import { FooterWrapper, FooterText } from './Footer.styled';
 
 const Footer = () => {
-  return <FooterWrapper>Footer</FooterWrapper>;
+  return (
+    <FooterWrapper>
+      <FooterText>JaneAdmin</FooterText>
+      <FooterText>© adminBoard</FooterText>
+    </FooterWrapper>
+  );
 };
 
 export default Footer;

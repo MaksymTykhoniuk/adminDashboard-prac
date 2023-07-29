@@ -16,7 +16,7 @@ import {
 const Header = () => {
   return (
     <HeaderWrapper>
-      <LogoWrapper>
+      <LogoWrapper to="/">
         <Logo src="logo.svg" alt="web logo" />
         <LogoText>adminBoard</LogoText>
       </LogoWrapper>
@@ -24,24 +24,24 @@ const Header = () => {
       <ControlsWrapper>
         <ControlsList>
           <ControlItem>
-            <ControlIcon href="">
-              <img src="search.svg" alt="" />
+            <ControlIcon>
+              <img src="search.svg" alt="search icon" />
             </ControlIcon>
           </ControlItem>
 
           <ControlItem>
-            <ControlIcon href="">
-              <img src="app.svg" alt="" />
+            <ControlIcon>
+              <img src="app.svg" alt="app icon " />
             </ControlIcon>
           </ControlItem>
           <ControlItem>
-            <ControlIcon href="">
-              <img src="expand.svg" alt="" />
+            <ControlIcon>
+              <img src="expand.svg" alt="expand icon" />
             </ControlIcon>
           </ControlItem>
           <ControlItem>
-            <ControlIcon href="">
-              <img src="search.svg" alt="" />
+            <ControlIcon>
+              <img src="notifications.svg" alt="notification icon" />
             </ControlIcon>
           </ControlItem>
         </ControlsList>
@@ -51,8 +51,8 @@ const Header = () => {
           <UserName>Jane</UserName>
         </UserWrapper>
 
-        <SettingIcon href="">
-          <img src="setting.svg" alt="" />
+        <SettingIcon>
+          <img src="setting.svg" alt="setting icon" />
         </SettingIcon>
       </ControlsWrapper>
     </HeaderWrapper>
