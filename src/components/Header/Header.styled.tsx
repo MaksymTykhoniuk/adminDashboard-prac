@@ -6,7 +6,6 @@ export const HeaderWrapper = styled.header`
   align-items: center;
   justify-content: space-between;
   padding: 5px 20px;
-  margin-bottom: 20px;
 `;
 
 export const LogoWrapper = styled(Link)`

@@ -10,34 +10,19 @@ export const SidebarWrapper = styled.div`
 export const SidebarList = styled.ul`
   display: flex;
   flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
   list-style: none;
-
-  &:last-of-type {
-    margin-bottom: 18px;
-  }
 `;
 
-export const SidebarListItem = styled.li`
-  display: flex;
-  margin-bottom: 5px;
-  margin-left: 10px;
-  cursor: pointer;
-  padding: 10px;
-  border-radius: 30px;
-
-  &:hover {
-    background-color: #384256;
-  }
-`;
+export const SidebarListItem = styled.li``;
 
 export const SidebarListTitle = styled.p`
-  display: block;
-  margin-bottom: 16px;
-
-  text-transform: uppercase;
-  font-size: 12px;
   color: #ddd;
   opacity: 0.7;
+  font-size: 12px;
+  font-weight: 200;
+  text-transform: uppercase;
 `;
 
 export const SidebarItemIcon = styled.img`
@@ -47,14 +32,28 @@ export const SidebarItemIcon = styled.img`
   margin-right: 8px;
 `;
 
-export const Link = styled(NavLink)`
+export const ItemLink = styled(NavLink)`
   display: flex;
   align-items: center;
-
+  gap: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
   color: white;
   font-weight: 500;
 
+  &:hover {
+    background-color: #384256;
+  }
+
   &.active {
-    color: orangered;
+    font-weight: bold;
+    color: #fff;
+    filter: drop-shadow(0px 0px 10px white);
+
+    &:hover {
+      background-color: #384256;
+      filter: none;
+    }
   }
 `;
