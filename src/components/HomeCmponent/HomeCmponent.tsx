@@ -1,48 +1,43 @@
 import Charts from '../Charts/Charts';
 import TopDeals from '../TopDeals/TopDeals';
+import { Section, Container } from './HomeCmponent.styled';
 import {
-  Section,
-  Container1,
-  // Container2,
-  // Container3,
-  // Container4,
-  // Container5,
-  // Container6,
-  // Container7,
-  // Container8,
-  // Container9,
-} from './HomeCmponent.styled';
+  chartBoxUser,
+  chartBoxProduct,
+  chartBoxConversion,
+  chartBoxRevenue,
+} from '../../../data';
 
 const HomeCmponent = () => {
   return (
     <Section>
-      <Container1 className="container_one">
+      <Container className="container_one">
         <TopDeals />
-      </Container1>
+      </Container>
 
-      <Container1>
-        <Charts />
-      </Container1>
+      <Container>
+        <Charts {...chartBoxUser} />
+      </Container>
 
-      <Container1>
-        <Charts />
-      </Container1>
+      <Container>
+        <Charts {...chartBoxProduct} />
+      </Container>
 
-      <Container1 className="container_one">Container4</Container1>
+      <Container className="container_one">Container4</Container>
 
-      <Container1>
-        <Charts />
-      </Container1>
+      <Container>
+        <Charts {...chartBoxConversion} />
+      </Container>
 
-      <Container1>
-        <Charts />
-      </Container1>
+      <Container>
+        <Charts {...chartBoxRevenue} />
+      </Container>
 
-      <Container1 className="container_seven">Container7</Container1>
+      <Container className="container_seven">Container7</Container>
 
-      <Container1>Container8</Container1>
+      <Container>Container8</Container>
 
-      <Container1>Container9</Container1>
+      <Container>Container9</Container>
     </Section>
   );
 };
