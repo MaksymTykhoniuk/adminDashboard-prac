@@ -49,7 +49,7 @@ export const ItemLink = styled(NavLink)`
   &.active {
     font-weight: bold;
     color: #fff;
-    filter: drop-shadow(0px 0px 10px white);
+    border: 1px solid #fff;
 
     &:hover {
       background-color: #384256;
