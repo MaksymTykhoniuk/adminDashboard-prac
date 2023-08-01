@@ -1,4 +1,4 @@
-import{g as fe,c as ti,r as W,R as T,a as vv,n as me,L as yv,j as Q,t as gv,b as mv,d as bv,e as xv,f as wv}from"./index-b3228fa6.js";var wh={exports:{}},ue={};/** @license React v16.13.1
+import{g as fe,c as ti,r as W,R as T,a as vv,n as me,L as yv,j as Q,t as gv,b as mv,d as bv,e as xv,f as wv}from"./index-4a93de0c.js";var wh={exports:{}},ue={};/** @license React v16.13.1
  * react-is.production.min.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -168,13 +168,13 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   border-radius: 10px;
   border: 1px solid #ddd;
 
-  &.container_one {
+  &.container_tall {
     grid-column: span 1;
     grid-row: span 3;
   }
 
-  &.container_seven {
+  &.container_horizontal {
     grid-column: span 2;
     grid-row: span 2;
   }
-`,WR=()=>Q.jsxs(UR,{children:[Q.jsx(bt,{className:"container_one",children:Q.jsx(FR,{})}),Q.jsx(bt,{children:Q.jsx(pi,{...mv})}),Q.jsx(bt,{children:Q.jsx(pi,{...bv})}),Q.jsx(bt,{className:"container_one",children:"Container4"}),Q.jsx(bt,{children:Q.jsx(pi,{...xv})}),Q.jsx(bt,{children:Q.jsx(pi,{...wv})}),Q.jsx(bt,{className:"container_seven",children:"Container7"}),Q.jsx(bt,{children:"Container8"}),Q.jsx(bt,{children:"Container9"})]}),zR=()=>Q.jsx(WR,{});export{zR as default};
+`,WR=()=>Q.jsxs(UR,{children:[Q.jsx(bt,{className:"container_tall",children:Q.jsx(FR,{})}),Q.jsx(bt,{children:Q.jsx(pi,{...mv})}),Q.jsx(bt,{children:Q.jsx(pi,{...bv})}),Q.jsx(bt,{className:"container_tall",children:"Container4"}),Q.jsx(bt,{children:Q.jsx(pi,{...xv})}),Q.jsx(bt,{children:Q.jsx(pi,{...wv})}),Q.jsx(bt,{className:"container_horizontal",children:"Container7"}),Q.jsx(bt,{children:"Container8"}),Q.jsx(bt,{children:"Container9"})]}),zR=()=>Q.jsx(WR,{});export{zR as default};
