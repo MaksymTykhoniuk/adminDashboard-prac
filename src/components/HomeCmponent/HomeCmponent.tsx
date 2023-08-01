@@ -6,7 +6,12 @@ import {
   chartBoxProduct,
   chartBoxConversion,
   chartBoxRevenue,
+  barChartBoxVisit,
+  barChartBoxRevenue,
 } from '../../../data';
+import BarChart from '../BarCharts/BarCharts';
+import PieChartBox from '../PieChartBox/PieChartBox';
+import BigChart from '../BigChart/BigChart';
 
 const HomeCmponent = () => {
   return (
@@ -23,7 +28,9 @@ const HomeCmponent = () => {
         <Charts {...chartBoxProduct} />
       </Container>
 
-      <Container className="container_tall">Container4</Container>
+      <Container className="container_tall">
+        <PieChartBox />
+      </Container>
 
       <Container>
         <Charts {...chartBoxConversion} />
@@ -33,11 +40,17 @@ const HomeCmponent = () => {
         <Charts {...chartBoxRevenue} />
       </Container>
 
-      <Container className="container_horizontal">Container7</Container>
+      <Container className="container_horizontal">
+        <BigChart />
+      </Container>
 
-      <Container>Container8</Container>
+      <Container>
+        <BarChart {...barChartBoxVisit} />
+      </Container>
 
-      <Container>Container9</Container>
+      <Container>
+        <BarChart {...barChartBoxRevenue} />
+      </Container>
     </Section>
   );
 };
