@@ -10,8 +10,6 @@ import {
 import { menu } from '../../../data.ts';
 
 const Sidebar = () => {
-  console.log(menu);
-
   return (
     <SidebarWrapper>
       {menu.map(el => (

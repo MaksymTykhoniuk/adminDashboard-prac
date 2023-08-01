@@ -12,12 +12,12 @@ export const Container = styled.div`
   border-radius: 10px;
   border: 1px solid #ddd;
 
-  &.container_one {
+  &.container_tall {
     grid-column: span 1;
     grid-row: span 3;
   }
 
-  &.container_seven {
+  &.container_horizontal {
     grid-column: span 2;
     grid-row: span 2;
   }

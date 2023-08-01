@@ -11,7 +11,7 @@ import {
 const HomeCmponent = () => {
   return (
     <Section>
-      <Container className="container_one">
+      <Container className="container_tall">
         <TopDeals />
       </Container>
 
@@ -23,7 +23,7 @@ const HomeCmponent = () => {
         <Charts {...chartBoxProduct} />
       </Container>
 
-      <Container className="container_one">Container4</Container>
+      <Container className="container_tall">Container4</Container>
 
       <Container>
         <Charts {...chartBoxConversion} />
@@ -33,7 +33,7 @@ const HomeCmponent = () => {
         <Charts {...chartBoxRevenue} />
       </Container>
 
-      <Container className="container_seven">Container7</Container>
+      <Container className="container_horizontal">Container7</Container>
 
       <Container>Container8</Container>
 
