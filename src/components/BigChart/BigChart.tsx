@@ -70,13 +70,19 @@ const BigChart = () => {
           >
             <XAxis dataKey="name" />
             <YAxis />
-            <Tooltip />
+            <Tooltip
+              contentStyle={{
+                backgroundColor: 'rgb(221, 221, 221, 0.5)',
+                borderRadius: '10px',
+              }}
+            />
+
             <Area
               type="monotone"
               dataKey="electronic"
               stackId="1"
-              stroke="#8884d8"
-              fill="#8884d8"
+              stroke="#ffc658"
+              fill="#ffc658"
             />
             <Area
               type="monotone"
@@ -89,8 +95,8 @@ const BigChart = () => {
               type="monotone"
               dataKey="books"
               stackId="1"
-              stroke="#ffc658"
-              fill="#ffc658"
+              stroke="#8884d8"
+              fill="#8884d8"
             />
           </AreaChart>
         </ResponsiveContainer>

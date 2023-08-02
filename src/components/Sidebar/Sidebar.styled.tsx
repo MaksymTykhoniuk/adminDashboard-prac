@@ -39,11 +39,12 @@ export const ItemLink = styled(NavLink)`
   padding: 10px;
   border-radius: 5px;
   cursor: pointer;
-  color: white;
+  color: #fff;
   font-weight: 500;
+  opacity: ${props => (props.to === '*' ? '0.2' : '1')};
 
   &:hover {
-    background-color: #384256;
+    background-color: ${props => (props.to === '*' ? '' : '#384256')};
   }
 
   &.active {

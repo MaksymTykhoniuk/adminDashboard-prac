@@ -18,7 +18,10 @@ const BarCharts = (props: Props) => {
         <ResponsiveContainer width="99%" height={146}>
           <BarChart data={chartData}>
             <Tooltip
-              contentStyle={{ background: '#2a3447', borderRadius: '5px' }}
+              contentStyle={{
+                background: '#2a3447',
+                borderRadius: '5px',
+              }}
               labelStyle={{ display: 'none' }}
               cursor={{ fill: 'none' }}
             />
