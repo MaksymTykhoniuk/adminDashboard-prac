@@ -6,6 +6,8 @@ import './styles/global.scss';
 const Home = lazy(() => import('./pages/Home/Home'));
 const Products = lazy(() => import('./pages/Products/Products'));
 const Users = lazy(() => import('./pages/Users/Users'));
+const SingleProduct = lazy(() => import('./pages/SingleProduct/SingleProduct'));
+const SingleUser = lazy(() => import('./pages/SingleUser/SingleUser'));
 
 function App() {
   return (
@@ -13,7 +15,9 @@ function App() {
       <Route path="/" element={<SharedLayout />}>
         <Route index element={<Home />}></Route>
         <Route path="/products" element={<Products />} />
+        <Route path="/products/:id" element={<SingleProduct />} />
         <Route path="/users" element={<Users />} />
+        <Route path="/users/:id" element={<SingleUser />} />
       </Route>
     </Routes>
   );
