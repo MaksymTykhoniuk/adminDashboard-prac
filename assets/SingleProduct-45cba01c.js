@@ -1,1 +1,0 @@
-import{n as r,j as t,o}from"./index-db4f2311.js";import{S as e}from"./SingleItem-e4dd6c16.js";import"./LineChart-0e73ed03.js";import"./index-182d5937.js";const n=r.div``,s=()=>t.jsxs(n,{children:["SingleProductC",t.jsx(e,{...o})]}),m=()=>t.jsx(s,{});export{m as default};
