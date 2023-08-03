@@ -5,6 +5,7 @@ import {
   SidebarListTitle,
   SidebarItemIcon,
   ItemLink,
+  DisabledBtn,
 } from './Sidebar.styled';
 
 import { menu } from '../../../data.ts';
@@ -18,10 +19,17 @@ const Sidebar = () => {
             {el.title}
             {el.listItems.map(item => (
               <SidebarListItem key={item.id}>
-                <ItemLink to={item.url}>
-                  <SidebarItemIcon src={item.icon} />
-                  {item.title}
-                </ItemLink>
+                {item.url === '*' ? (
+                  <DisabledBtn disabled>
+                    <SidebarItemIcon src={item.icon} />
+                    {item.title}
+                  </DisabledBtn>
+                ) : (
+                  <ItemLink to={item.url}>
+                    <SidebarItemIcon src={item.icon} />
+                    {item.title}
+                  </ItemLink>
+                )}
               </SidebarListItem>
             ))}
           </SidebarListTitle>

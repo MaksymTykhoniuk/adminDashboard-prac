@@ -8,11 +8,13 @@ import {
 } from './UsersComponent.styled';
 import { Avatar } from '../UsersDataGrid/UsersDataGrid.styled';
 import { userRows } from '../../../data';
+import { useState } from 'react';
+import AddNewModal from '../AddNewModal/AddNewModal';
 
 const columns: GridColDef[] = [
   { field: 'id', headerName: 'ID', width: 85 },
   {
-    field: 'avatar',
+    field: 'img',
     headerName: 'Avatar',
     width: 100,
     filterable: false,
@@ -46,16 +48,18 @@ const columns: GridColDef[] = [
   {
     field: 'phone',
     headerName: 'Phone',
-    type: 'number',
+    type: 'string',
     width: 110,
     editable: true,
+    align: 'right',
   },
   {
     field: 'createdAt',
     headerName: 'Created At',
-    type: 'number',
+    type: 'string',
     width: 160,
     editable: true,
+    align: 'right',
   },
   {
     field: 'verified',
@@ -71,14 +75,20 @@ const columns: GridColDef[] = [
 ];
 
 const UsersComponent = () => {
+  const [open, setOpen] = useState(false);
+
   return (
     <SectionWrapper>
       <InfoWrapper>
         <Title>Users</Title>
-        <AddUserBtn type="button">Add new user</AddUserBtn>
+        <AddUserBtn type="button" onClick={() => setOpen(true)}>
+          Add new user
+        </AddUserBtn>
       </InfoWrapper>
 
       <UsersDataGrid slug="users" columns={columns} rows={userRows} />
+
+      {open && <AddNewModal slug="user" columns={columns} setOpen={setOpen} />}
     </SectionWrapper>
   );
 };

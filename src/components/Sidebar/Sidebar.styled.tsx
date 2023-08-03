@@ -41,7 +41,7 @@ export const ItemLink = styled(NavLink)`
   cursor: pointer;
   color: #fff;
   font-weight: 500;
-  opacity: ${props => (props.to === '*' ? '0.2' : '1')};
+  transition: all 250ms linear;
 
   &:hover {
     background-color: ${props => (props.to === '*' ? '' : '#384256')};
@@ -57,4 +57,21 @@ export const ItemLink = styled(NavLink)`
       filter: none;
     }
   }
+`;
+
+export const DisabledBtn = styled.button`
+  border: none;
+  outline: none;
+  background: transparent;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+  opacity: 0.2;
 `;

@@ -6,8 +6,20 @@ export const InfoWrapper = styled.div`
   display: flex;
   align-items: center;
   gap: 20px;
+  margin-bottom: 20px;
 `;
 
 export const Title = styled.h2``;
 
-export const AddUserBtn = styled.button``;
+export const AddUserBtn = styled.button`
+  padding: 7px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 250ms linear;
+
+  &:hover {
+    scale: 1.1;
+  }
+`;

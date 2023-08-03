@@ -49,7 +49,6 @@ const UsersDataGrid = (props: Props) => {
 
   return (
     <DataGridWrapper>
-      UsersDataGrid
       <UserDataTable
         columnHeaderHeight={68}
         rowHeight={55}
