@@ -5,7 +5,6 @@ import { singleProduct } from '../../../data';
 const SingleProductC = () => {
   return (
     <SectionWrapper>
-      SingleProductC
       <SingleItem {...singleProduct} />
     </SectionWrapper>
   );
