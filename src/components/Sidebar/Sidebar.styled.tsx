@@ -11,11 +11,14 @@ export const SidebarList = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 10px;
+  width: 100%;
   margin-bottom: 20px;
   list-style: none;
 `;
 
-export const SidebarListItem = styled.li``;
+export const SidebarListItem = styled.li`
+  width: 100%;
+`;
 
 export const SidebarListTitle = styled.p`
   color: #ddd;

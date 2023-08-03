@@ -1,5 +1,7 @@
+import ProductsComponent from '../../components/ProductsComponent/ProductsComponent';
+
 const Products = () => {
-  return <div>Products</div>;
+  return <ProductsComponent />;
 };
 
 export default Products;

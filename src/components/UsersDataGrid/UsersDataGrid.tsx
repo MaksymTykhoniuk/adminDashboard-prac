@@ -31,7 +31,6 @@ const UsersDataGrid = (props: Props) => {
     filterable: false,
     disableColumnMenu: true,
     hideSortIcons: true,
-
     width: 200,
     renderCell: params => {
       return (
@@ -50,7 +49,7 @@ const UsersDataGrid = (props: Props) => {
   return (
     <DataGridWrapper>
       <UserDataTable
-        columnHeaderHeight={68}
+        columnHeaderHeight={65}
         rowHeight={55}
         rows={rows}
         columns={[...columns, actionColumn]}
