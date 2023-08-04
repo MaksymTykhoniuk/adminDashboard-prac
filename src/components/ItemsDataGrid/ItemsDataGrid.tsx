@@ -7,7 +7,7 @@ import {
   ViewUserIcon,
   DeleteUserBtn,
   DeleteUserIcon,
-} from './UsersDataGrid.styled';
+} from './ItemsDataGrid.styled';
 
 type Props = {
   columns: GridColDef[];
@@ -15,7 +15,7 @@ type Props = {
   slug: string;
 };
 
-const UsersDataGrid = (props: Props) => {
+const ItemsDataGrid = (props: Props) => {
   const { columns, rows, slug } = props;
 
   const handleDeleteUser = (id: number) => {
@@ -36,10 +36,10 @@ const UsersDataGrid = (props: Props) => {
       return (
         <ActionWrapper>
           <ViewUser to={`/${slug}/${params.row.id}`}>
-            <ViewUserIcon src="/view.svg" alt="open user" />
+            <ViewUserIcon src="view.svg" alt="open user" />
           </ViewUser>
           <DeleteUserBtn onClick={() => handleDeleteUser(params.row.id)}>
-            <DeleteUserIcon src="/delete.svg" alt="delete user" />
+            <DeleteUserIcon src="delete.svg" alt="delete user" />
           </DeleteUserBtn>
         </ActionWrapper>
       );
@@ -78,4 +78,4 @@ const UsersDataGrid = (props: Props) => {
   );
 };
 
-export default UsersDataGrid;
+export default ItemsDataGrid;

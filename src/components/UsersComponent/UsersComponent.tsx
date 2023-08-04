@@ -1,12 +1,12 @@
 import { GridColDef } from '@mui/x-data-grid';
-import UsersDataGrid from '../UsersDataGrid/UsersDataGrid';
+import ItemsDataGrid from '../ItemsDataGrid/ItemsDataGrid';
 import {
   SectionWrapper,
   InfoWrapper,
   Title,
   AddUserBtn,
 } from './UsersComponent.styled';
-import { Avatar } from '../UsersDataGrid/UsersDataGrid.styled';
+import { Avatar } from '../ItemsDataGrid/ItemsDataGrid.styled';
 import { userRows } from '../../../data';
 import { useState } from 'react';
 import AddNewModal from '../AddNewModal/AddNewModal';
@@ -86,7 +86,7 @@ const UsersComponent = () => {
         </AddUserBtn>
       </InfoWrapper>
 
-      <UsersDataGrid slug="users" columns={columns} rows={userRows} />
+      <ItemsDataGrid slug="users" columns={columns} rows={userRows} />
 
       {open && <AddNewModal slug="user" columns={columns} setOpen={setOpen} />}
     </SectionWrapper>

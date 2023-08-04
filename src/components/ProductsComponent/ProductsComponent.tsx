@@ -8,7 +8,7 @@ import {
 } from './ProductsComponent.styled';
 
 import AddNewModal from '../AddNewModal/AddNewModal';
-import UsersDataGrid from '../UsersDataGrid/UsersDataGrid';
+import ItemsDataGrid from '../ItemsDataGrid/ItemsDataGrid';
 import { GridColDef } from '@mui/x-data-grid';
 import { products } from '../../../data';
 
@@ -87,7 +87,7 @@ const ProductsComponent = () => {
         </AddUserBtn>
       </InfoWrapper>
 
-      <UsersDataGrid slug="products" columns={columns} rows={products} />
+      <ItemsDataGrid slug="products" columns={columns} rows={products} />
 
       {open && (
         <AddNewModal slug="productas" columns={columns} setOpen={setOpen} />
