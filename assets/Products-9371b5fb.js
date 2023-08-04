@@ -1,4 +1,4 @@
-import{n as r,r as o,j as e,p as s}from"./index-deeb66e3.js";import{U as a,A as l}from"./UsersDataGrid-972af33c.js";import"./index-3a780aff.js";const c=r.div``,p=r.div`
+import{n as r,r as o,j as e,p as s}from"./index-687f64d7.js";import{I as a,A as l}from"./ItemsDataGrid-9333ba46.js";import"./index-e5ce7e0a.js";const c=r.div``,p=r.div`
   display: flex;
   align-items: center;
   gap: 20px;
