@@ -9,7 +9,7 @@ export const SectionWrapper = styled.div`
 
 export const ViewWrapper = styled.div`
   flex: 1;
-  padding: 20px;
+  padding: 20px 20px 10px 20px;
 `;
 
 export const InfoWrapper = styled.div`
@@ -24,9 +24,9 @@ export const InfoWrapper = styled.div`
 `;
 
 export const ChartWrapper = styled.div`
-  margin-top: 50px;
+  margin-top: 45px;
   width: 80%;
-  height: 400px;
+  height: 362px;
 `;
 
 // _____
@@ -75,7 +75,7 @@ export const DetailValue = styled.p``;
 // _____
 export const ActivitiesWrapper = styled.div`
   flex: 1;
-  padding: 20px;
+  padding: 20px 20px 10px 20px;
 `;
 
 export const ActivitiesTitle = styled.h2`
@@ -88,7 +88,7 @@ export const ActivityItem = styled.li`
   list-style: none;
   position: relative;
   width: 1px;
-  padding-top: 50px;
+  padding-top: 45px;
   background: #f45b69;
 
   &::after {

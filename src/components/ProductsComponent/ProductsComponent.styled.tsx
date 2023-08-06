@@ -6,7 +6,7 @@ export const InfoWrapper = styled.div`
   display: flex;
   align-items: center;
   gap: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 `;
 
 export const Title = styled.h2``;

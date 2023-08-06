@@ -1,5 +1,23 @@
 @import './variables.scss';
 
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: seagreen;
+}
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  color: #232323;
+
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+
+  max-height: 100vh;
+  width: 100%;
+}
+
 * {
   margin: 0;
   padding: 0;
