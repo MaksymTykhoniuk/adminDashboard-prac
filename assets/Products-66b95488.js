@@ -1,8 +1,8 @@
-import{n as r,r as o,j as e,p as s}from"./index-687f64d7.js";import{I as a,A as l}from"./ItemsDataGrid-9333ba46.js";import"./index-e5ce7e0a.js";const c=r.div``,p=r.div`
+import{n as r,r as o,j as e,p as s}from"./index-aaa9da6e.js";import{I as a,A as l}from"./ItemsDataGrid-3cdf7005.js";import"./index-7cc241c2.js";const c=r.div``,p=r.div`
   display: flex;
   align-items: center;
   gap: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 `,u=r.h2``,h=r.button`
   padding: 7px;
   border-radius: 10px;

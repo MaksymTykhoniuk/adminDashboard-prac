@@ -1,0 +1,1 @@
+import{n as r,j as t,o}from"./index-aaa9da6e.js";import{S as e}from"./SingleItem-24c930d7.js";import"./LineChart-9505393b.js";import"./index-7cc241c2.js";const n=r.div``,s=()=>t.jsx(n,{children:t.jsx(e,{...o})}),a=()=>t.jsx(s,{});export{a as default};
